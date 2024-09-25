@@ -1,3 +1,14 @@
+/* DEBUG */
+
+/* header,
+.hero,
+.plan,
+.partner,
+footer,
+.faq {
+  display: none;
+} */
+
 /* # RESET */
 
 * {
@@ -151,10 +162,56 @@ body {
 
 /* PARTNER */
 
-.partner-section {
+.partner-container {
   display: flex;
 }
 
 .partner-img {
   max-width: 60%;
+}
+
+.partner-text {
+  padding: 3rem;
+}
+
+/* BUSINESS */
+
+.business-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.business-card {
+  /* debug */
+  background-color: #91579c;
+  border: 1px dashed white;
+  min-height: 300px;
+  min-width: 30%;
+  max-width: 30%;
+}
+
+.business-clients {
+  /* debug */
+  background-color: #579c96;
+  border: 1px dashed white;
+  /* min-height: 500px; */
+}
+
+.business-clients-top {
+  display: flex;
+  /* debug */
+  background-color: #579c96;
+  border: 1px dashed white;
+  min-height: 400px;
+}
+
+.business-clients-bottom {
+  display: flex;
+  justify-content: space-evenly;
+
+  /* debug */
+  background-color: #80579c;
+  border: 1px dashed white;
+  min-height: 100px;
 }
