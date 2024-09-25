@@ -97,10 +97,27 @@ li {
   border: 1px dashed white;
 }
 
-.hero-container {
+.hero-container-big {
+  position: relative;
+}
+
+.hero-container-small {
   display: flex;
+  /* debug */
+  background-color: #0081dd;
+  border: 1px dashed white;
 }
 
 .hero-text {
   max-width: 40%;
+  /* debug */
+  background-color: #108f16;
+  border: 1px dashed white;
+}
+
+.hero-img {
+  /* max-width: 40%; */
+  /* debug */
+  background-color: #a86d00;
+  border: 1px dashed white;
 }
