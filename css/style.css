@@ -96,3 +96,11 @@ li {
   min-width: 35%;
   border: 1px dashed white;
 }
+
+.hero-container {
+  display: flex;
+}
+
+.hero-text {
+  max-width: 40%;
+}
