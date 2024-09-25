@@ -44,6 +44,11 @@ li {
   border: 1px dashed white;
 }
 
+.header-left,
+.header-right {
+  display: flex;
+}
+
 .header-left {
   /* debug */
   background-color: #ff7d00;
@@ -53,8 +58,40 @@ li {
 }
 
 .header-right {
+  justify-content: flex-end;
+
   /* debug */
   background-color: #78290f;
+  min-height: 70px;
+  min-width: 35%;
+  border: 1px dashed white;
+}
+
+.header-logo {
+  /* debug */
+  background-color: #001524;
+  min-height: 70px;
+  min-width: 35%;
+  border: 1px dashed white;
+}
+
+.header-button {
+  /* debug */
+  background-color: #62b5b5;
+  min-height: 70px;
+  min-width: 35%;
+  border: 1px dashed white;
+}
+
+.header-nav li {
+  display: inline-block;
+}
+
+/* MAIN */
+
+.hero {
+  /* debug */
+  background-color: #e27396;
   min-height: 70px;
   min-width: 35%;
   border: 1px dashed white;
