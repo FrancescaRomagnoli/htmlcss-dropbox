@@ -1,7 +1,6 @@
 /* DEBUG */
 
 footer,
-.hero,
 .plan,
 .partner,
 .faq,
@@ -38,7 +37,7 @@ li {
 /* # UTILS */
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .container {
@@ -54,22 +53,23 @@ body {
   font-size: 1rem;
 }
 
+.button-var {
+  color: white;
+  background-color: #0061ff;
+}
+
 /* HEADER */
 
 .header-container {
   display: flex;
   justify-content: space-between;
   min-height: 70px;
-  /* background-color: #579c96; */
 }
 
 .header-left,
 .header-right {
   display: flex;
   align-items: center;
-}
-
-.header-left {
 }
 
 .header-right {
@@ -81,9 +81,7 @@ body {
   padding: 20px 15px;
 }
 
-.header-button {
-  color: white;
-  background-color: #0061ff;
+.header-button-container {
   margin: 20px 10px;
 }
 
@@ -97,36 +95,43 @@ body {
 
 /* HERO */
 .hero {
+  background-color: #b4d0e7;
+
   /* debug */
-  background-color: #e27396;
-  min-height: 70px;
-  min-width: 35%;
-  border: 1px dashed white;
+  /* background-color: #405c74; */
 }
 
 .hero-container-big {
   position: relative;
+  width: 1300px;
+  top: 80px;
 }
 
 .hero-container-small {
   display: flex;
-  /* debug */
-  background-color: #0081dd;
-  border: 1px dashed white;
+  padding: 1rem;
+}
+
+.hero-title > h1 {
+  font-size: 4.5rem;
+  font-weight: 900;
+  padding: 1rem;
 }
 
 .hero-text {
-  max-width: 40%;
-  /* debug */
-  background-color: #108f16;
-  border: 1px dashed white;
+  max-width: 30%;
+}
+
+.hero-text button {
+  margin: 2rem 0;
+}
+
+.hero-text .fa-arrow-down {
+  font-size: 3.5rem;
+  padding-top: 9rem;
 }
 
 .hero-img {
-  /* max-width: 40%; */
-  /* debug */
-  background-color: #a86d00;
-  border: 1px dashed white;
 }
 
 /* PLAN */
