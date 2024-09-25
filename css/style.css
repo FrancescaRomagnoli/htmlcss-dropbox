@@ -144,6 +144,17 @@ body {
   /* debug */
   background-color: #91579c;
   border: 1px dashed white;
-  min-height: 200px;
+  min-height: 600px;
   min-width: 30%;
+  max-width: 30%;
+}
+
+/* PARTNER */
+
+.partner-section {
+  display: flex;
+}
+
+.partner-img {
+  max-width: 60%;
 }
