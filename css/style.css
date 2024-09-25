@@ -1,13 +1,13 @@
 /* DEBUG */
 
-/* header,
+header,
 .hero,
 .plan,
 .partner,
-footer,
-.faq {
+.faq,
+.business {
   display: none;
-} */
+}
 
 /* # RESET */
 
@@ -214,4 +214,29 @@ body {
   background-color: #80579c;
   border: 1px dashed white;
   min-height: 100px;
+}
+
+/* FAQ */
+
+.faq-question {
+  /* debug */
+  background-color: #80579c;
+  border: 1px dashed white;
+  min-height: 50px;
+}
+
+/* FOOTER */
+
+.footer-top {
+  display: flex;
+  justify-content: space-evenly;
+  /* debug */
+  background-color: #0073a8;
+}
+
+.footer-column {
+  /* debug */
+  background-color: #80579c;
+  border: 1px dashed white;
+  min-height: 50px;
 }
