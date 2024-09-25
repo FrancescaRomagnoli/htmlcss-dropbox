@@ -1,6 +1,6 @@
 /* DEBUG */
 
-header,
+footer,
 .hero,
 .plan,
 .partner,
@@ -48,58 +48,49 @@ body {
   max-width: 100%;
 }
 
+.button {
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+}
+
 /* HEADER */
 
 .header-container {
   display: flex;
   justify-content: space-between;
-  /* debug */
-  background-color: #114b5f;
-  min-height: 80px;
-  border: 1px dashed white;
+  min-height: 70px;
+  /* background-color: #579c96; */
 }
 
 .header-left,
 .header-right {
   display: flex;
+  align-items: center;
 }
 
 .header-left {
-  /* debug */
-  background-color: #ff7d00;
-  min-height: 70px;
-  min-width: 35%;
-  border: 1px dashed white;
 }
 
 .header-right {
   justify-content: flex-end;
-
-  /* debug */
-  background-color: #78290f;
-  min-height: 70px;
   min-width: 35%;
-  border: 1px dashed white;
 }
 
 .header-logo {
-  /* debug */
-  background-color: #001524;
-  min-height: 70px;
-  min-width: 35%;
-  border: 1px dashed white;
+  padding: 20px 15px;
 }
 
 .header-button {
-  /* debug */
-  background-color: #62b5b5;
-  min-height: 70px;
-  min-width: 35%;
-  border: 1px dashed white;
+  color: white;
+  background-color: #0061ff;
+  margin: 20px 10px;
 }
 
 .header-nav li {
   display: inline-block;
+  padding: 10px;
+  border: 1px dashed white;
 }
 
 /* MAIN */
@@ -168,10 +159,14 @@ body {
 
 .partner-img {
   max-width: 60%;
+  /* debug */
+  border: 1px dashed black;
 }
 
 .partner-text {
   padding: 3rem;
+  /* debug */
+  border: 1px dashed black;
 }
 
 /* BUSINESS */
