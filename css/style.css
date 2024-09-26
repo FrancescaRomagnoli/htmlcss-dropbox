@@ -3,9 +3,9 @@
 /* footer,
 header,
 .hero,
-.partner,
+#plans,
 .faq,
-.plan,
+#brands,
 .business {
   display: none;
 } */
@@ -39,11 +39,12 @@ li {
 
 body {
   font-family: "Open Sans", sans-serif;
+  color: #030000;
 }
 
 .container {
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0rem 10px;
   width: 1000px;
   max-width: 100%;
 }
@@ -54,9 +55,14 @@ body {
   font-size: 1rem;
 }
 
-.button-var {
+.button-blue {
   color: white;
   background-color: #0061ff;
+}
+
+.button-white {
+  background-color: white;
+  border: 1px solid black;
 }
 
 .link-odd {
@@ -170,143 +176,98 @@ body {
 
 /* PLAN */
 
-.plan .container > h2 {
+#plans .row {
+  gap: 3rem;
+}
+
+#plans .container {
+  padding-top: 7rem;
+  padding-bottom: 3.5rem;
+}
+
+#plans .container > h2 {
   font-size: 2rem;
+}
+
+.fake-radio {
   padding: 2rem 0;
 }
 
-.radio {
-  padding: 2rem 0;
+.fake-radio-item {
+  padding-right: 1rem;
 }
 
 /* CARD */
 
-.card-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-}
-
 .plan-card {
   border: 1px solid grey;
-  font-size: 0.9rem;
-  max-width: 30%;
 }
 
 .plan-card-header {
-  padding: 0.5rem 0;
   border-bottom: 1px solid grey;
   text-align: center;
-}
-
-.plan-card-body {
-  font-size: 0.9rem;
-  line-height: 2rem;
-  padding: 2rem 1.5rem;
-}
-
-.singolo::before {
-  font: var(--fa-font-solid);
-  content: "\f007";
-  padding-right: 5px;
-}
-
-.team::before {
-  font: var(--fa-font-solid);
-  content: "\f0c0";
-  padding-right: 5px;
-}
-
-.azienda::before {
-  font: var(--fa-font-solid);
-  content: "\f1ad";
-  padding-right: 5px;
-}
-
-.card-list {
-  padding: 1rem 0;
-  line-height: normal;
-}
-
-.card-list-item {
   padding: 0.5rem;
 }
 
-.card-list-item:first-child::before {
-  font: var(--fa-font-solid);
-  content: "\f007";
-  padding-right: 5px;
+.plan-card-body {
+  padding: 2rem 2rem;
 }
 
-.card-list-item:nth-child(2)::before {
-  font: var(--fa-font-solid);
-  content: "\f07b";
-  padding-right: 5px;
+.plan-card-body > * {
+  margin-bottom: 1rem;
 }
 
-.card-list-item:last-child::before {
-  font: var(--fa-font-solid);
-  content: "\f1e0";
-  padding-right: 5px;
+.plan-card-body li {
+  padding-bottom: 1rem;
 }
 
-.plan-card-body .button {
-  margin: 1rem 0;
+.plan-card-body > h3 {
+  font-size: 1.5rem;
 }
 
-.plan-card-body h3 {
-  font-size: 0.8rem;
+.plan-card-body > h4 {
+  font-size: 0.9rem;
 }
 
-.card-bottom {
-  line-height: 1rem;
+.plan-card-body > h5 {
+  color: grey;
+  font-weight: 600;
 }
 
-.card-bottom::before {
-  font: var(--fa-font-solid);
-  content: "\f00c";
-  padding-right: 5px;
-  color: #0061ff;
-}
-
-.plan-card-odd {
-  max-width: 100%;
-  margin: 2rem 0;
-  border: 1px solid grey;
-}
-
-.plan-card-header-odd {
-  border-bottom: 1px solid grey;
-}
-
-.plan-card-body-odd {
+.plan-card-body.odd {
   display: flex;
 }
 
-.plan-card-body.odd.bottom {
-  min-width: 30%;
+.plan-card-body-col > * {
+  margin-bottom: 1rem;
 }
 
-.plan-card-body p {
-  padding: 2rem 0;
+.plan-card-body-col.w-40 {
+  text-align: right;
+}
+
+.plan-card.w-100 {
+  margin-top: 3rem;
 }
 
 /* PARTNER */
 
 .partner-container {
   display: flex;
+  padding: 3rem 0;
+  margin: 3rem 0;
 }
 
 .partner-img {
   max-width: 60%;
-  /* debug */
-  border: 1px dashed black;
 }
 
 .partner-text {
   padding: 3rem;
-  /* debug */
-  border: 1px dashed black;
+}
+
+.partner-text > * {
+  margin: 1rem;
 }
 
 /* BUSINESS */
@@ -315,18 +276,36 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  padding: 3rem 0;
+}
+
+.business > .container {
+  padding-bottom: 10rem;
+}
+
+.business > .container > h2 {
+  font-size: 2.3rem;
+}
+
+.business > .container > .w-60 > h3 {
+  font-size: 2.3rem;
+  padding: 3rem 0;
 }
 
 .business-card {
-  /* debug */
-  background-color: #91579c;
-  border: 1px dashed white;
-  min-height: 300px;
-  min-width: 30%;
   max-width: 30%;
+  padding: 1rem 0.5rem;
+}
+
+.business-card > h2 {
+  padding-bottom: 2rem;
 }
 
 /* BRANDS */
+
+#brands > .row {
+  margin: 3rem 0;
+}
 
 .brand-col {
   display: flex;
@@ -410,6 +389,12 @@ body {
 .brand-logo {
   height: 50%;
   width: 50%;
+}
+
+/* CALL TO ACTION */
+
+#call-to-action {
+  background-color: #b4d0e7;
 }
 
 /* FAQ */
