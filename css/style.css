@@ -43,6 +43,7 @@ body {
   border: none;
   padding: 10px;
   font-size: 1rem;
+  background-color: white;
 }
 
 .button-blue {
@@ -134,7 +135,7 @@ body {
 .hero-container-big {
   position: relative;
   width: 1250px;
-  top: 80px;
+  top: 90px;
 }
 
 .hero-container-small {
@@ -299,8 +300,6 @@ body {
 
   width: calc(100vw / 3);
   height: calc(100vw / 3);
-
-  border: 1px dashed black;
 }
 
 .brand-col.odd {
@@ -319,20 +318,19 @@ body {
 
 .brand-col > div > img {
   width: 70%;
-  border: 1px dashed black;
 }
 
 /* SQUARES */
 
 .brand-logo > svg {
-  display: none;
+  /* display: none; */
   fill: currentColor;
   color: white;
-  border: 1px solid white;
 }
 
 .brand-square.right:first-child {
   background-color: #a2d39b;
+  border: 15px solid #d1e9cd;
 }
 
 .brand-square.right:nth-child(2) {
@@ -369,7 +367,6 @@ body {
   align-items: center;
   padding: 2rem;
   width: 50%;
-  border: 1px dashed black;
 }
 
 .brand-logo {
